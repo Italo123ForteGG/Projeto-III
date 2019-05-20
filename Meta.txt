@@ -1,0 +1,24 @@
+A FAZER:
+
+-
+
+
+
+
+FAZENDO: 
+
+
+- Métodos CRUD para os alunos matriculados.
+
+
+
+FEITO:
+- Cadastro de alunos não matriculados
+
+- Atualização de alunos já matriculados
+
+- Inserir barra de progresso junto ao botão cadastrar.
+
+- Subir código para o GitHub.
+
+OK :)
