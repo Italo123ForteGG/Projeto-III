@@ -304,7 +304,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(724, 547);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(850, 595);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtTelefone);
@@ -334,6 +335,7 @@
             this.Controls.Add(this.txtBuscarAluno);
             this.Controls.Add(this.dgvEmpresas);
             this.Controls.Add(this.dgvAlunos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmAlunoEmpresa";
             this.Text = "frmAlunoEmpresa";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlunos)).EndInit();
