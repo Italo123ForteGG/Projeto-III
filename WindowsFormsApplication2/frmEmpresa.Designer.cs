@@ -79,7 +79,7 @@
             // 
             this.lblCnpj.AutoSize = true;
             this.lblCnpj.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCnpj.Location = new System.Drawing.Point(130, 39);
+            this.lblCnpj.Location = new System.Drawing.Point(130, 66);
             this.lblCnpj.Name = "lblCnpj";
             this.lblCnpj.Size = new System.Drawing.Size(52, 21);
             this.lblCnpj.TabIndex = 1;
@@ -89,7 +89,7 @@
             // 
             this.txtCnpj.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtCnpj.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCnpj.Location = new System.Drawing.Point(188, 37);
+            this.txtCnpj.Location = new System.Drawing.Point(188, 64);
             this.txtCnpj.Name = "txtCnpj";
             this.txtCnpj.Size = new System.Drawing.Size(179, 27);
             this.txtCnpj.TabIndex = 2;
@@ -98,7 +98,7 @@
             // 
             this.txtNomeFantasia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtNomeFantasia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeFantasia.Location = new System.Drawing.Point(188, 70);
+            this.txtNomeFantasia.Location = new System.Drawing.Point(188, 97);
             this.txtNomeFantasia.Name = "txtNomeFantasia";
             this.txtNomeFantasia.Size = new System.Drawing.Size(179, 27);
             this.txtNomeFantasia.TabIndex = 4;
@@ -107,7 +107,7 @@
             // 
             this.lblNomeFantasia.AutoSize = true;
             this.lblNomeFantasia.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNomeFantasia.Location = new System.Drawing.Point(54, 72);
+            this.lblNomeFantasia.Location = new System.Drawing.Point(54, 99);
             this.lblNomeFantasia.Name = "lblNomeFantasia";
             this.lblNomeFantasia.Size = new System.Drawing.Size(128, 21);
             this.lblNomeFantasia.TabIndex = 3;
@@ -117,7 +117,7 @@
             // 
             this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTelefone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone.Location = new System.Drawing.Point(188, 103);
+            this.txtTelefone.Location = new System.Drawing.Point(188, 130);
             this.txtTelefone.Name = "txtTelefone";
             this.txtTelefone.Size = new System.Drawing.Size(179, 27);
             this.txtTelefone.TabIndex = 6;
@@ -127,7 +127,7 @@
             // 
             this.lblTelefone.AutoSize = true;
             this.lblTelefone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(106, 105);
+            this.lblTelefone.Location = new System.Drawing.Point(106, 132);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(76, 21);
             this.lblTelefone.TabIndex = 5;
@@ -137,7 +137,7 @@
             // 
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(188, 136);
+            this.txtEmail.Location = new System.Drawing.Point(188, 163);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(179, 27);
             this.txtEmail.TabIndex = 8;
@@ -146,7 +146,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(131, 138);
+            this.lblEmail.Location = new System.Drawing.Point(131, 165);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(51, 21);
             this.lblEmail.TabIndex = 7;
@@ -156,7 +156,7 @@
             // 
             this.txtRazaoSocial.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtRazaoSocial.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRazaoSocial.Location = new System.Drawing.Point(188, 169);
+            this.txtRazaoSocial.Location = new System.Drawing.Point(188, 196);
             this.txtRazaoSocial.Name = "txtRazaoSocial";
             this.txtRazaoSocial.Size = new System.Drawing.Size(179, 27);
             this.txtRazaoSocial.TabIndex = 10;
@@ -165,7 +165,7 @@
             // 
             this.lblRazaoSocial.AutoSize = true;
             this.lblRazaoSocial.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRazaoSocial.Location = new System.Drawing.Point(74, 171);
+            this.lblRazaoSocial.Location = new System.Drawing.Point(74, 198);
             this.lblRazaoSocial.Name = "lblRazaoSocial";
             this.lblRazaoSocial.Size = new System.Drawing.Size(108, 21);
             this.lblRazaoSocial.TabIndex = 9;
@@ -175,7 +175,7 @@
             // 
             this.txtResponsavel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtResponsavel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResponsavel.Location = new System.Drawing.Point(188, 202);
+            this.txtResponsavel.Location = new System.Drawing.Point(188, 229);
             this.txtResponsavel.Name = "txtResponsavel";
             this.txtResponsavel.Size = new System.Drawing.Size(179, 27);
             this.txtResponsavel.TabIndex = 12;
@@ -184,7 +184,7 @@
             // 
             this.lblResponsavel.AutoSize = true;
             this.lblResponsavel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResponsavel.Location = new System.Drawing.Point(75, 204);
+            this.lblResponsavel.Location = new System.Drawing.Point(75, 231);
             this.lblResponsavel.Name = "lblResponsavel";
             this.lblResponsavel.Size = new System.Drawing.Size(107, 21);
             this.lblResponsavel.TabIndex = 11;

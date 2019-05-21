@@ -30,30 +30,40 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTelaPrincipal));
             this.pnOpcoes = new System.Windows.Forms.Panel();
+            this.pnVisualizarEncaminhados = new System.Windows.Forms.Panel();
+            this.pntelaPrincipal = new System.Windows.Forms.Panel();
+            this.btnVisualizarEncaminhados = new System.Windows.Forms.Button();
+            this.pn3 = new System.Windows.Forms.Panel();
+            this.btnTelaPrincipal = new System.Windows.Forms.Button();
+            this.pn4 = new System.Windows.Forms.Panel();
+            this.pn1 = new System.Windows.Forms.Panel();
+            this.pn2 = new System.Windows.Forms.Panel();
+            this.picFechar = new System.Windows.Forms.PictureBox();
+            this.pnEncaminharAlunos = new System.Windows.Forms.Panel();
+            this.pnEmpresa = new System.Windows.Forms.Panel();
+            this.pnAluno = new System.Windows.Forms.Panel();
+            this.pnImportarAlunos = new System.Windows.Forms.Panel();
             this.btnEncaminharAlunos = new System.Windows.Forms.Button();
             this.btnEmpresa = new System.Windows.Forms.Button();
             this.btnAluno = new System.Windows.Forms.Button();
             this.btnLeitorExcel = new System.Windows.Forms.Button();
-            this.pnImportarAlunos = new System.Windows.Forms.Panel();
-            this.pnAluno = new System.Windows.Forms.Panel();
-            this.pnEmpresa = new System.Windows.Forms.Panel();
-            this.pnEncaminharAlunos = new System.Windows.Forms.Panel();
             this.pnCima = new System.Windows.Forms.Panel();
             this.pnContem = new System.Windows.Forms.Panel();
-            this.picFechar = new System.Windows.Forms.PictureBox();
-            this.picTelaInicial = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnOpcoes.SuspendLayout();
-            this.pnContem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picFechar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTelaInicial)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnOpcoes
             // 
             this.pnOpcoes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.pnOpcoes.Controls.Add(this.picTelaInicial);
+            this.pnOpcoes.Controls.Add(this.pnVisualizarEncaminhados);
+            this.pnOpcoes.Controls.Add(this.pntelaPrincipal);
+            this.pnOpcoes.Controls.Add(this.btnVisualizarEncaminhados);
+            this.pnOpcoes.Controls.Add(this.pn3);
+            this.pnOpcoes.Controls.Add(this.btnTelaPrincipal);
+            this.pnOpcoes.Controls.Add(this.pn4);
+            this.pnOpcoes.Controls.Add(this.pn1);
+            this.pnOpcoes.Controls.Add(this.pn2);
             this.pnOpcoes.Controls.Add(this.picFechar);
             this.pnOpcoes.Controls.Add(this.pnEncaminharAlunos);
             this.pnOpcoes.Controls.Add(this.pnEmpresa);
@@ -69,6 +79,142 @@
             this.pnOpcoes.Size = new System.Drawing.Size(258, 607);
             this.pnOpcoes.TabIndex = 0;
             this.pnOpcoes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnOpcoes_MouseDown);
+            // 
+            // pnVisualizarEncaminhados
+            // 
+            this.pnVisualizarEncaminhados.BackColor = System.Drawing.Color.Crimson;
+            this.pnVisualizarEncaminhados.Location = new System.Drawing.Point(3, 346);
+            this.pnVisualizarEncaminhados.Name = "pnVisualizarEncaminhados";
+            this.pnVisualizarEncaminhados.Size = new System.Drawing.Size(12, 50);
+            this.pnVisualizarEncaminhados.TabIndex = 10;
+            this.pnVisualizarEncaminhados.Visible = false;
+            // 
+            // pntelaPrincipal
+            // 
+            this.pntelaPrincipal.BackColor = System.Drawing.Color.Crimson;
+            this.pntelaPrincipal.Location = new System.Drawing.Point(3, 402);
+            this.pntelaPrincipal.Name = "pntelaPrincipal";
+            this.pntelaPrincipal.Size = new System.Drawing.Size(12, 50);
+            this.pntelaPrincipal.TabIndex = 8;
+            this.pntelaPrincipal.Visible = false;
+            // 
+            // btnVisualizarEncaminhados
+            // 
+            this.btnVisualizarEncaminhados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnVisualizarEncaminhados.FlatAppearance.BorderSize = 0;
+            this.btnVisualizarEncaminhados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVisualizarEncaminhados.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVisualizarEncaminhados.ForeColor = System.Drawing.Color.White;
+            this.btnVisualizarEncaminhados.Image = ((System.Drawing.Image)(resources.GetObject("btnVisualizarEncaminhados.Image")));
+            this.btnVisualizarEncaminhados.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVisualizarEncaminhados.Location = new System.Drawing.Point(19, 346);
+            this.btnVisualizarEncaminhados.Name = "btnVisualizarEncaminhados";
+            this.btnVisualizarEncaminhados.Size = new System.Drawing.Size(239, 50);
+            this.btnVisualizarEncaminhados.TabIndex = 9;
+            this.btnVisualizarEncaminhados.Text = "Visualizar ";
+            this.btnVisualizarEncaminhados.UseVisualStyleBackColor = true;
+            this.btnVisualizarEncaminhados.Click += new System.EventHandler(this.btnVisualizarEncaminhados_Click);
+            // 
+            // pn3
+            // 
+            this.pn3.BackColor = System.Drawing.Color.White;
+            this.pn3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pn3.Location = new System.Drawing.Point(-1, 594);
+            this.pn3.Name = "pn3";
+            this.pn3.Size = new System.Drawing.Size(258, 1);
+            this.pn3.TabIndex = 3;
+            // 
+            // btnTelaPrincipal
+            // 
+            this.btnTelaPrincipal.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTelaPrincipal.FlatAppearance.BorderSize = 0;
+            this.btnTelaPrincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTelaPrincipal.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTelaPrincipal.ForeColor = System.Drawing.Color.White;
+            this.btnTelaPrincipal.Image = ((System.Drawing.Image)(resources.GetObject("btnTelaPrincipal.Image")));
+            this.btnTelaPrincipal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTelaPrincipal.Location = new System.Drawing.Point(19, 402);
+            this.btnTelaPrincipal.Name = "btnTelaPrincipal";
+            this.btnTelaPrincipal.Size = new System.Drawing.Size(239, 50);
+            this.btnTelaPrincipal.TabIndex = 7;
+            this.btnTelaPrincipal.Text = "Tela Principal";
+            this.btnTelaPrincipal.UseVisualStyleBackColor = true;
+            this.btnTelaPrincipal.Click += new System.EventHandler(this.btnTelaPrincipal_Click);
+            // 
+            // pn4
+            // 
+            this.pn4.BackColor = System.Drawing.Color.White;
+            this.pn4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pn4.Location = new System.Drawing.Point(0, 597);
+            this.pn4.Name = "pn4";
+            this.pn4.Size = new System.Drawing.Size(258, 1);
+            this.pn4.TabIndex = 2;
+            // 
+            // pn1
+            // 
+            this.pn1.BackColor = System.Drawing.Color.White;
+            this.pn1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pn1.Location = new System.Drawing.Point(0, 520);
+            this.pn1.Name = "pn1";
+            this.pn1.Size = new System.Drawing.Size(258, 1);
+            this.pn1.TabIndex = 1;
+            // 
+            // pn2
+            // 
+            this.pn2.BackColor = System.Drawing.Color.White;
+            this.pn2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.pn2.Location = new System.Drawing.Point(0, 523);
+            this.pn2.Name = "pn2";
+            this.pn2.Size = new System.Drawing.Size(258, 1);
+            this.pn2.TabIndex = 0;
+            // 
+            // picFechar
+            // 
+            this.picFechar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picFechar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picFechar.Image = ((System.Drawing.Image)(resources.GetObject("picFechar.Image")));
+            this.picFechar.Location = new System.Drawing.Point(98, 538);
+            this.picFechar.Name = "picFechar";
+            this.picFechar.Size = new System.Drawing.Size(60, 44);
+            this.picFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picFechar.TabIndex = 7;
+            this.picFechar.TabStop = false;
+            this.picFechar.Click += new System.EventHandler(this.picFechar_Click);
+            // 
+            // pnEncaminharAlunos
+            // 
+            this.pnEncaminharAlunos.BackColor = System.Drawing.Color.Crimson;
+            this.pnEncaminharAlunos.Location = new System.Drawing.Point(3, 290);
+            this.pnEncaminharAlunos.Name = "pnEncaminharAlunos";
+            this.pnEncaminharAlunos.Size = new System.Drawing.Size(12, 50);
+            this.pnEncaminharAlunos.TabIndex = 6;
+            this.pnEncaminharAlunos.Visible = false;
+            // 
+            // pnEmpresa
+            // 
+            this.pnEmpresa.BackColor = System.Drawing.Color.Crimson;
+            this.pnEmpresa.Location = new System.Drawing.Point(3, 228);
+            this.pnEmpresa.Name = "pnEmpresa";
+            this.pnEmpresa.Size = new System.Drawing.Size(12, 50);
+            this.pnEmpresa.TabIndex = 5;
+            this.pnEmpresa.Visible = false;
+            // 
+            // pnAluno
+            // 
+            this.pnAluno.BackColor = System.Drawing.Color.Crimson;
+            this.pnAluno.Location = new System.Drawing.Point(3, 166);
+            this.pnAluno.Name = "pnAluno";
+            this.pnAluno.Size = new System.Drawing.Size(12, 50);
+            this.pnAluno.TabIndex = 5;
+            this.pnAluno.Visible = false;
+            // 
+            // pnImportarAlunos
+            // 
+            this.pnImportarAlunos.BackColor = System.Drawing.Color.Crimson;
+            this.pnImportarAlunos.Location = new System.Drawing.Point(3, 104);
+            this.pnImportarAlunos.Name = "pnImportarAlunos";
+            this.pnImportarAlunos.Size = new System.Drawing.Size(12, 50);
+            this.pnImportarAlunos.TabIndex = 4;
             // 
             // btnEncaminharAlunos
             // 
@@ -139,41 +285,6 @@
             this.btnLeitorExcel.UseVisualStyleBackColor = true;
             this.btnLeitorExcel.Click += new System.EventHandler(this.btnLeitorExcel_Click);
             // 
-            // pnImportarAlunos
-            // 
-            this.pnImportarAlunos.BackColor = System.Drawing.Color.Crimson;
-            this.pnImportarAlunos.Location = new System.Drawing.Point(3, 104);
-            this.pnImportarAlunos.Name = "pnImportarAlunos";
-            this.pnImportarAlunos.Size = new System.Drawing.Size(12, 50);
-            this.pnImportarAlunos.TabIndex = 4;
-            // 
-            // pnAluno
-            // 
-            this.pnAluno.BackColor = System.Drawing.Color.Crimson;
-            this.pnAluno.Location = new System.Drawing.Point(3, 166);
-            this.pnAluno.Name = "pnAluno";
-            this.pnAluno.Size = new System.Drawing.Size(12, 50);
-            this.pnAluno.TabIndex = 5;
-            this.pnAluno.Visible = false;
-            // 
-            // pnEmpresa
-            // 
-            this.pnEmpresa.BackColor = System.Drawing.Color.Crimson;
-            this.pnEmpresa.Location = new System.Drawing.Point(3, 228);
-            this.pnEmpresa.Name = "pnEmpresa";
-            this.pnEmpresa.Size = new System.Drawing.Size(12, 50);
-            this.pnEmpresa.TabIndex = 5;
-            this.pnEmpresa.Visible = false;
-            // 
-            // pnEncaminharAlunos
-            // 
-            this.pnEncaminharAlunos.BackColor = System.Drawing.Color.Crimson;
-            this.pnEncaminharAlunos.Location = new System.Drawing.Point(3, 290);
-            this.pnEncaminharAlunos.Name = "pnEncaminharAlunos";
-            this.pnEncaminharAlunos.Size = new System.Drawing.Size(12, 50);
-            this.pnEncaminharAlunos.TabIndex = 6;
-            this.pnEncaminharAlunos.Visible = false;
-            // 
             // pnCima
             // 
             this.pnCima.BackColor = System.Drawing.Color.Crimson;
@@ -187,44 +298,12 @@
             // pnContem
             // 
             this.pnContem.BackColor = System.Drawing.Color.White;
-            this.pnContem.Controls.Add(this.pictureBox1);
             this.pnContem.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnContem.Location = new System.Drawing.Point(258, 12);
             this.pnContem.Name = "pnContem";
             this.pnContem.Size = new System.Drawing.Size(850, 595);
             this.pnContem.TabIndex = 2;
             this.pnContem.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnContem_MouseDown);
-            // 
-            // picFechar
-            // 
-            this.picFechar.Image = ((System.Drawing.Image)(resources.GetObject("picFechar.Image")));
-            this.picFechar.Location = new System.Drawing.Point(54, 549);
-            this.picFechar.Name = "picFechar";
-            this.picFechar.Size = new System.Drawing.Size(43, 34);
-            this.picFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picFechar.TabIndex = 7;
-            this.picFechar.TabStop = false;
-            // 
-            // picTelaInicial
-            // 
-            this.picTelaInicial.Image = ((System.Drawing.Image)(resources.GetObject("picTelaInicial.Image")));
-            this.picTelaInicial.Location = new System.Drawing.Point(156, 549);
-            this.picTelaInicial.Name = "picTelaInicial";
-            this.picTelaInicial.Size = new System.Drawing.Size(43, 34);
-            this.picTelaInicial.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picTelaInicial.TabIndex = 7;
-            this.picTelaInicial.TabStop = false;
-            this.picTelaInicial.Click += new System.EventHandler(this.picTelaInicial_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(213, 190);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(418, 186);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // frmTelaPrincipal
             // 
@@ -239,10 +318,7 @@
             this.Name = "frmTelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnOpcoes.ResumeLayout(false);
-            this.pnContem.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTelaInicial)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -260,8 +336,14 @@
         private System.Windows.Forms.Panel pnImportarAlunos;
         private System.Windows.Forms.Panel pnCima;
         private System.Windows.Forms.Panel pnContem;
-        private System.Windows.Forms.PictureBox picTelaInicial;
         private System.Windows.Forms.PictureBox picFechar;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel pn3;
+        private System.Windows.Forms.Panel pn4;
+        private System.Windows.Forms.Panel pn1;
+        private System.Windows.Forms.Panel pn2;
+        private System.Windows.Forms.Panel pntelaPrincipal;
+        private System.Windows.Forms.Button btnTelaPrincipal;
+        private System.Windows.Forms.Panel pnVisualizarEncaminhados;
+        private System.Windows.Forms.Button btnVisualizarEncaminhados;
     }
 }

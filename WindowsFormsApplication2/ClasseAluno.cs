@@ -104,5 +104,12 @@ namespace WindowsFormsApplication2
             bd.Desconectar();
             return dt;
         }
+        public DataTable RetornarAlunoEmpresa()
+        {
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT raAluno,nomeAluno,rg,cpf,codigoTurma,nomeCurso FROM Aluno "));
+            bd.Desconectar();
+            return dt;
+        }
     }
 }

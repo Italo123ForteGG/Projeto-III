@@ -62,7 +62,7 @@
             this.btnAbrir.BackColor = System.Drawing.Color.Crimson;
             this.btnAbrir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAbrir.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbrir.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbrir.ForeColor = System.Drawing.Color.White;
             this.btnAbrir.Location = new System.Drawing.Point(351, 103);
             this.btnAbrir.Name = "btnAbrir";

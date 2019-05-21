@@ -33,6 +33,9 @@ namespace WindowsFormsApplication2
                 pnAluno.Visible = false;
                 pnEmpresa.Visible = false;
                 pnEncaminharAlunos.Visible = false;
+                pntelaPrincipal.Visible = false;
+                pnVisualizarEncaminhados.Visible = false;
+
             }
 
             AberturaTela(new frmExcelReader());
@@ -46,6 +49,9 @@ namespace WindowsFormsApplication2
                 pnAluno.Visible = true;
                 pnEmpresa.Visible = false;
                 pnEncaminharAlunos.Visible = false;
+                pntelaPrincipal.Visible = false;
+                pnVisualizarEncaminhados.Visible = false;
+
             }
 
             AberturaTela(new frmManterAlunos());
@@ -59,6 +65,9 @@ namespace WindowsFormsApplication2
                 pnAluno.Visible = false;
                 pnEmpresa.Visible = true;
                 pnEncaminharAlunos.Visible = false;
+                pntelaPrincipal.Visible = false;
+                pnVisualizarEncaminhados.Visible = false;
+
             }
 
             AberturaTela(new frmEmpresa());
@@ -72,8 +81,11 @@ namespace WindowsFormsApplication2
                 pnAluno.Visible = false;
                 pnEmpresa.Visible = false;
                 pnEncaminharAlunos.Visible = true;
+                pntelaPrincipal.Visible = false;
+                pnVisualizarEncaminhados.Visible = false;
+
             }
-            AberturaTela(new frmRelatorioAlunos());
+            AberturaTela(new frmAlunoEmpresa());
         }
 
         private void AberturaTela(object frmAluno)
@@ -109,13 +121,39 @@ namespace WindowsFormsApplication2
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void picSair_Click(object sender, EventArgs e)
+        private void picFechar_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
 
-        private void picTelaInicial_Click(object sender, EventArgs e)
+        private void btnTelaPrincipal_Click(object sender, EventArgs e)
         {
+            if (pntelaPrincipal.Visible == false)
+            {
+                pnImportarAlunos.Visible = false;
+                pnAluno.Visible = false;
+                pnEmpresa.Visible = false;
+                pnEncaminharAlunos.Visible = false;
+                pntelaPrincipal.Visible = true;
+                pnVisualizarEncaminhados.Visible = false;
+
+            }
+            AberturaTela(new frmLogoTelaPrincipal());
         }
+
+        private void btnVisualizarEncaminhados_Click(object sender, EventArgs e)
+        {
+            if (pnVisualizarEncaminhados.Visible == false)
+            {
+                pnImportarAlunos.Visible = false;
+                pnAluno.Visible = false;
+                pnEmpresa.Visible = false;
+                pnEncaminharAlunos.Visible = false;
+                pntelaPrincipal.Visible = false;
+                pnVisualizarEncaminhados.Visible = true;
+            }
+            AberturaTela(new frmVisualizarEncaminhados());
+        }
+
     }
 }

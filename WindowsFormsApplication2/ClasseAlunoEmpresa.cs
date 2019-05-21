@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace WindowsFormsApplication2
 {
@@ -10,17 +11,17 @@ namespace WindowsFormsApplication2
     {
         ClasseAcessoBD bd = new ClasseAcessoBD();
 
-        private int idAluno_Empresa { get; set; }
-        private float raAluno { get; set; }
-        private string nomeAluno { get; set; }
-        private string rgAluno { get; set; }
-        private string cpfAluno { get; set; }
-        private string codigoTurma { get; set; }
-        private string nomeCurso { get; set; }
-        private int idEmpresa { get; set; }
-        private string nomeFantasia { get; set;}
-        private string cnpj { get; set;}
-        private string responsavel { get; set; }
+        public int idAluno_Empresa { get; set; }
+        public float raAluno { get; set; }
+        public string nomeAluno { get; set; }
+        public string rgAluno { get; set; }
+        public string cpfAluno { get; set; }
+        public string codigoTurma { get; set; }
+        public string nomeCurso { get; set; }
+        public int idEmpresa { get; set; }
+        public string nomeFantasia { get; set;}
+        public string cnpj { get; set;}
+        public string responsavel { get; set; }
         public string telefoneResponsavel { get; set; }
 
 
@@ -33,7 +34,7 @@ namespace WindowsFormsApplication2
                 bd.Conectar();
 
                 //Executa o insert
-                bd.ExecutarComandosSql(String.Format(""));
+                bd.ExecutarComandosSql(String.Format("INSERT INTO Aluno_Empresa (raAluno,nomeAluno,rgAluno,cpfAluno,codigoTurma,nomeCurso,idEmpresa,nomeFantasia,cnpj,responsavel,tefefoneResponsavel) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',{6},'{7}','{8}','{9}','{10}')",raAluno,nomeAluno,rgAluno,cpfAluno,codigoTurma,nomeCurso,idEmpresa,nomeFantasia,cnpj,responsavel,telefoneResponsavel));
 
                 //Desconecta no banco 
                 bd.Desconectar();
@@ -41,8 +42,15 @@ namespace WindowsFormsApplication2
             }
             catch (Exception ex)
             {
-                throw new Exception(ex.Message + "Erro ao registrar. ");
+                throw new Exception(ex.Message + "Erro ao encaminhar aluno para empresa. ");
             }
+        }
+        public DataTable RetornarAlunoEmpresa()
+        {
+            bd.Conectar();
+            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Aluno_Empresa"));
+            bd.Desconectar();
+            return dt;
         }
     }
 }

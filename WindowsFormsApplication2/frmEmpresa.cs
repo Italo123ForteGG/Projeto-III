@@ -24,7 +24,7 @@ namespace WindowsFormsApplication2
 
             empresa.Cnpj = txtCnpj.Text;
             empresa.NomeFantasia = txtNomeFantasia.Text;
-            empresa.Telefone = int.Parse(txtTelefone.Text);
+            empresa.Telefone = txtTelefone.Text;
             empresa.Email = txtEmail.Text;
             empresa.RazaoSocial = txtRazaoSocial.Text;
             empresa.Responsavel = txtResponsavel.Text;
@@ -74,7 +74,7 @@ namespace WindowsFormsApplication2
         {
             empresa.Cnpj = txtCnpj.Text;
             empresa.NomeFantasia = txtNomeFantasia.Text;
-            empresa.Telefone = int.Parse(txtTelefone.Text);
+            empresa.Telefone = txtTelefone.Text;
             empresa.Email = txtEmail.Text;
             empresa.RazaoSocial = txtRazaoSocial.Text;
             empresa.Responsavel = txtResponsavel.Text;
@@ -93,7 +93,7 @@ namespace WindowsFormsApplication2
             }
             else
             {
-                MessageBox.Show("Edição não realizada com sucesso!");
+                MessageBox.Show("Edição não realizada.");
             }
         }
 
@@ -101,7 +101,7 @@ namespace WindowsFormsApplication2
         {
             empresa.Cnpj = txtCnpj.Text;
             empresa.NomeFantasia = txtNomeFantasia.Text;
-            empresa.Telefone = int.Parse(txtTelefone.Text);
+            empresa.Telefone = txtTelefone.Text;
             empresa.Email = txtEmail.Text;
             empresa.RazaoSocial = txtRazaoSocial.Text;
             empresa.Responsavel = txtResponsavel.Text;

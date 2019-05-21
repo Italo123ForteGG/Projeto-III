@@ -12,7 +12,7 @@ namespace WindowsFormsApplication2
         public int IdEmpresa { get; set; }
         public string Cnpj { get; set; }
         public string NomeFantasia { get; set; }
-        public int Telefone { get; set; }
+        public string Telefone { get; set; }
         public string Email { get; set; }
         public string RazaoSocial { get; set; }
         public string Responsavel { get; set; }
@@ -63,7 +63,7 @@ namespace WindowsFormsApplication2
         public DataTable ExibirEmpresa()
         {
             bd.Conectar();
-            DataTable dt = bd.RetDataTable(String.Format("SELECT * FROM Empresa"));
+            DataTable dt = bd.RetDataTable(String.Format("SELECT cnpj,nomeFantasia,responsavel,telefone,idEmpresa FROM Empresa"));
             bd.Desconectar();
             return dt;
         }
@@ -88,6 +88,7 @@ namespace WindowsFormsApplication2
                 throw new Exception(ex.Message + "Erro ao inserir aluno. ");
             }
         }
+
         public DataTable RetornarEmpresaPorNome(string buscarEmpresa)
         {
             bd.Conectar();
@@ -95,6 +96,7 @@ namespace WindowsFormsApplication2
             bd.Desconectar();
             return dt;
         }
+
         public bool ExcluirEmpresa(int CodEmpresa)
         {
             try
